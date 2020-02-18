@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DebtRefresh.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,5 +14,6 @@ namespace DebtRefresh.Domain.Interfaces
         public IInterestSchedule InterestRates { get; set; }
         public IFeeSchedule FeeSchedule { get; set; }
         public IDueDateSchedule DueDateSchedule { get; set; }
+        public ConsumerDebtEnums ConsumerDebtType { get; set; }
     }
 }

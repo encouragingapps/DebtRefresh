@@ -10,15 +10,29 @@ namespace DebtRefresh.Domain.BusinessLogic
     public class MyConsumerDebt
     {
         public List<IConsumerDebt> ConsumerDebts { get; set; }
-
+        
         public MyConsumerDebt()
         {
             ConsumerDebts = new List<IConsumerDebt>();
+            LoadData();
         }
 
-        public float GetTotalDebt()
+        public void LoadData()
+        {
+
+        }
+
+        public float GetTotalConsumerDebt()
         {
             return ConsumerDebts.Sum(x => x.OwingBalance);
         }
+
+        public float GetTotalConsumerDebt(Enums.ConsumerDebtEnums debtType)
+        {
+            return ConsumerDebts.Where(x => 
+                                       x.ConsumerDebtType == debtType).Sum(
+                                       x => x.OwingBalance);
+        }
+     
     }
 }

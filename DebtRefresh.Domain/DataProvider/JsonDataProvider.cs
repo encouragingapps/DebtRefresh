@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DebtRefresh.Domain.Interfaces;
 
 namespace DebtRefresh.Domain.DataProvider
 {
-    public class JsonDataProvider
+    public class JsonDataProvider : IDataProvider
     {
         
         public void GetData()

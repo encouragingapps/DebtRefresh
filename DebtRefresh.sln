@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtRefresh.Domain", "DebtR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtRefresh.Tests", "DebtRefresh.Tests\DebtRefresh.Tests.csproj", "{E9E8A5F8-E851-475F-9626-984BB5114197}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtRefresh.WebUI", "DebtRefresh.WebUI\DebtRefresh.WebUI.csproj", "{23FE3A59-9BEB-43E2-BF87-92F46171405D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E9E8A5F8-E851-475F-9626-984BB5114197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E8A5F8-E851-475F-9626-984BB5114197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E8A5F8-E851-475F-9626-984BB5114197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23FE3A59-9BEB-43E2-BF87-92F46171405D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FE3A59-9BEB-43E2-BF87-92F46171405D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FE3A59-9BEB-43E2-BF87-92F46171405D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FE3A59-9BEB-43E2-BF87-92F46171405D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

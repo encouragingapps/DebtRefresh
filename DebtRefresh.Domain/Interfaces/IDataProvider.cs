@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DebtRefresh.Domain.Interfaces
 {
-    interface IDataProvider
+    public interface IDataProvider
     {
         
         public void SaveData();
