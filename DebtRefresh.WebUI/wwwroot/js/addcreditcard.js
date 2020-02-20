@@ -1,12 +1,19 @@
 ﻿var app = new Vue({
     el: '#app',
     data: {
-        cardvendor: '',
-        cardnickname: '',
-        creditcardtype: ''
+        cardVendor: '',
+        cardNickname: '',
+        creditCardType: '',
+        interestRates: [
+            {
+                interestRate: '',
+                startDate: '',
+                endDate: '',
+            }
+        ]
     },
     methods: {
-        addinterestrate: function (event) {
+        addInterestRate: function (event) {
             
             alert('Add code to add interest here!')
             

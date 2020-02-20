@@ -8,17 +8,17 @@
     <!--Vue App Start-->
     <label>Credit Card Vendor Name:</label>
     <br />
-    <input v-model="cardvendor" placeholder="[Enter Credit Card Vendor Name]" size="50">
-    <font color="gray">cardvendor-debug: {{ cardvendor }}</font>
+    <input v-model="cardVendor" placeholder="[Enter Credit Card Vendor Name]" size="50">
+    <font color="gray">cardVendor-debug: {{ cardVendor }}</font>
     <br /><br />
     <label>Credit Card Nick Name:</label>
     <br />
-    <input v-model="cardnickname" placeholder="[Enter Credit Card Nickname]" size="50">
-    <font color="gray">cardnickname-debug: {{ cardnickname }}</font>
+    <input v-model="cardNickname" placeholder="[Enter Credit Card Nickname]" size="50">
+    <font color="gray">cardNickname-debug: {{ cardNickname }}</font>
     <br /><br />
     <label>Credit Card Type:</label>
     <br />
-    <select v-model="creditcardtype">
+    <select v-model="creditCardType">
         <option value="1">Visa</option>
         <option value="2">Mastercard</option>
         <option value="3">Discover</option>
@@ -28,7 +28,7 @@
     <font color="gray">creditcardtype-debug: {{ creditcardtype }}</font>
     <br /><br />
     <label>Add Interest Rates:</label>
-    <button v-on:click="addinterestrate">Add Interest</button>
+    <button v-on:click="addInterestRate">Add Interest</button>
     <!--Vue App End-->
 </div>
 
