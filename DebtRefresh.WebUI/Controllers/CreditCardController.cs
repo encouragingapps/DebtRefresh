@@ -16,10 +16,10 @@ namespace DebtRefresh.WebUI.Controllers
         }
 
         // GET: CreditCard/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        //public ActionResult Details(int id)
+        //{
+        //    return View();
+        //}
 
         // GET: CreditCard/Create
         public ActionResult Create()
@@ -45,10 +45,10 @@ namespace DebtRefresh.WebUI.Controllers
         }
 
         // GET: CreditCard/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        //public ActionResult Edit(int id)
+        //{
+        //    return View();
+        //}
 
         // POST: CreditCard/Edit/5
         [HttpPost]
@@ -68,10 +68,10 @@ namespace DebtRefresh.WebUI.Controllers
         }
 
         // GET: CreditCard/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
         // POST: CreditCard/Delete/5
         [HttpPost]

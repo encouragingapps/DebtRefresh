@@ -1,8 +1,6 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Add Credit Card";
 }
-
 <h1>
     Add Credit Card
 </h1>
@@ -15,11 +13,25 @@
     <br /><br />
     <label>Credit Card Nick Name:</label>
     <br />
-    <input v-model="cardnickname" placeholder="[Enter Credit Card Nickname]"  size="50">
+    <input v-model="cardnickname" placeholder="[Enter Credit Card Nickname]" size="50">
     <font color="gray">cardnickname-debug: {{ cardnickname }}</font>
+    <br /><br />
+    <label>Credit Card Type:</label>
     <br />
+    <select v-model="creditcardtype">
+        <option value="1">Visa</option>
+        <option value="2">Mastercard</option>
+        <option value="3">Discover</option>
+        <option value="4">American Express</option>
+        <option value="5">Other</option>
+    </select>
+    <font color="gray">creditcardtype-debug: {{ creditcardtype }}</font>
+    <br /><br />
+    <label>Add Interest Rates:</label>
+    <button v-on:click="addinterestrate">Add Interest</button>
     <!--Vue App End-->
 </div>
+
 @section Scripts{
     <script src="~/lib/vue/vue.js"></script>
     <script src="~/js/addcreditcard.js"></script>

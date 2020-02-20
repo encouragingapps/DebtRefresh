@@ -9,18 +9,13 @@ namespace DebtRefresh.Domain.Entities
 {    
     public class CreditCardEntity : IConsumerDebt
     {
-        public CreditCardEntity(IInterestSchedule rates,
-                                IFeeSchedule fees,
-                                IDueDateSchedule duedates,
-                                IRewards rewards)
+        public CreditCardEntity()
         {
-            InterestRates = rates;
-            FeeSchedule = fees;
-            DueDateSchedule = duedates;
-            Rewards = rewards;
+           
         }
 
         public string VendorName { get; set; }
+        public CreditCardTypeEnum CreditCardType { get; set; }
         public string AccountNickName { get; set; }
         public ConsumerDebtEnums ConsumerDebtType {get; set;}
         public float CreditLine { get; set; }

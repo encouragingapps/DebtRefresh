@@ -2,6 +2,14 @@
     el: '#app',
     data: {
         cardvendor: '',
-        cardnickname: ''
+        cardnickname: '',
+        creditcardtype: ''
+    },
+    methods: {
+        addinterestrate: function (event) {
+            
+            alert('Add code to add interest here!')
+            
+        }
     }
 })
