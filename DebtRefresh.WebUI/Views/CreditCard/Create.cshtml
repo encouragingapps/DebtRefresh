@@ -38,9 +38,9 @@
         </thead>
         <tbody>
             <tr v-for="(item,index) in interestRates">
-                <td>{{item.interestRate}}</td>
-                <td>{{item.startDate}}</td>
-                <td>{{item.endDate}}</td>
+                <td><input type="text" v-model="item.interestRate"></td>
+                <td><input type="text" v-model="item.startDate"></td>
+                <td><input type="text" v-model="item.endDate"></td>
             </tr>
         </tbody>
     </table>
