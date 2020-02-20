@@ -28,6 +28,23 @@
     <font color="gray">creditcardtype-debug: {{ creditcardtype }}</font>
     <br /><br />
     <label>Add Interest Rates:</label>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Interest Rate %</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(item,index) in interestRates">
+                <td>{{item.interestRate}}</td>
+                <td>{{item.startDate}}</td>
+                <td>{{item.endDate}}</td>
+            </tr>
+        </tbody>
+    </table>
+
     <button v-on:click="addInterestRate">Add Interest</button>
     <!--Vue App End-->
 </div>
