@@ -11,11 +11,13 @@
     <input v-model="cardVendor" placeholder="[Enter Credit Card Vendor Name]" size="50">
     <font color="gray">cardVendor-debug: {{ cardVendor }}</font>
     <br /><br />
+
     <label>Credit Card Nick Name:</label>
     <br />
     <input v-model="cardNickname" placeholder="[Enter Credit Card Nickname]" size="50">
     <font color="gray">cardNickname-debug: {{ cardNickname }}</font>
     <br /><br />
+
     <label>Credit Card Type:</label>
     <br />
     <select v-model="creditCardType">
@@ -27,7 +29,20 @@
     </select>
     <font color="gray">creditcardtype-debug: {{ creditCardType }}</font>
     <br /><br />
-    <label>Add Interest Rates:</label>
+
+    <label>Credit Card Credit Limit:</label>
+    <br />
+    <input v-model="cardLimit" placeholder="[Enter Credit Card Limit]" size="50">
+    <font color="gray">cardLimit-debug: {{ cardLimit }}</font>
+    <br /><br />
+
+    <label>Credit Card Credit Balance:</label>
+    <br />
+    <input v-model="cardBalance" placeholder="[Enter Credit Card Balance]" size="50">
+    <font color="gray">cardBalance-debug: {{ cardBalance }}</font>
+    <br /><br />      
+
+    <label>Add Interest Rate(s):</label>
     <table border="1">
         <thead>
             <tr>
@@ -47,8 +62,8 @@
         </tbody>
     </table>
 
-<button v-on:click="addInterestRate">Add Interest</button>
-<!--Vue App End-->
+    <button v-on:click="addInterestRate">Add Interest</button>
+    <!--Vue App End-->
 </div>
 
 @section Scripts{

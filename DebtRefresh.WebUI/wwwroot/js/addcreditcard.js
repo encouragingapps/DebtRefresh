@@ -4,6 +4,8 @@
         cardVendor: '',
         cardNickname: '',
         creditCardType: '',
+        cardLimit: '',
+        cardBalance: '',
         interestRates: [
             {
                 interestRate: '0.30',
