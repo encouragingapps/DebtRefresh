@@ -21,7 +21,7 @@
         addInterestRate: function (event) {                   
             this.interestRates.push({});
         },
-        removeRow: function (event) {            
+        removeInterestRate: function (event) {            
             this.interestRates.pop({});
         }    
 
