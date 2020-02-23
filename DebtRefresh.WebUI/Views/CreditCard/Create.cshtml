@@ -9,13 +9,11 @@
     <label>Credit Card Vendor Name:</label>
     <br />
     <input v-model="cardVendor" placeholder="[Enter Credit Card Vendor Name]" size="50">
-    <font color="gray">cardVendor-debug: {{ cardVendor }}</font>
     <br /><br />
 
     <label>Credit Card Nick Name:</label>
     <br />
     <input v-model="cardNickname" placeholder="[Enter Credit Card Nickname]" size="50">
-    <font color="gray">cardNickname-debug: {{ cardNickname }}</font>
     <br /><br />
 
     <label>Credit Card Type:</label>
@@ -27,20 +25,18 @@
         <option value="4">American Express</option>
         <option value="5">Other</option>
     </select>
-    <font color="gray">creditcardtype-debug: {{ creditCardType }}</font>
+
     <br /><br />
 
     <label>Credit Card Credit Limit:</label>
     <br />
     <input v-model="cardLimit" placeholder="[Enter Credit Card Limit]" size="50">
-    <font color="gray">cardLimit-debug: {{ cardLimit }}</font>
     <br /><br />
 
     <label>Credit Card Credit Balance:</label>
     <br />
     <input v-model="cardBalance" placeholder="[Enter Credit Card Balance]" size="50">
-    <font color="gray">cardBalance-debug: {{ cardBalance }}</font>
-    <br /><br />      
+    <br /><br />
 
     <label>Add Interest Rate(s):</label>
     <table border="1">
@@ -63,11 +59,26 @@
     </table>
 
     <button v-on:click="addInterestRate">Add Interest</button>
+
+    <br />
+    <br />
+
+    <button v-on:click="addCard">Add Card</button>
+
+    <br />
+    <br />
+    <font color="gray">cardVendor-debug: {{ cardVendor }}</font><br />
+    <font color="gray">cardNickname-debug: {{ cardNickname }}</font><br />
+    <font color="gray">creditcardtype-debug: {{ creditCardType }}</font><br />
+    <font color="gray">cardLimit-debug: {{ cardLimit }}</font><br />
+    <font color="gray">cardBalance-debug: {{ cardBalance }}</font><br />
+    
     <!--Vue App End-->
 </div>
 
 @section Scripts{
     <script src="~/lib/vue/vue.js"></script>
+    <script src="~/lib/axios/axios.js"></script>
     <script src="~/js/addcreditcard.js"></script>
 }
 

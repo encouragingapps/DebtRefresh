@@ -6,5 +6,10 @@
       "library": "vue@2.6.11",
       "destination": "wwwroot/lib/vue/"
     }
-  ]
+  ,
+{
+  "library": "axios@0.19.2",
+  "destination": "wwwroot/lib/axios/"
+}
+]
 }

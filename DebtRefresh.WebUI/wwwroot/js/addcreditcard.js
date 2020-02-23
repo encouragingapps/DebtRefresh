@@ -25,6 +25,9 @@
         },
         removeInterestRate: function (event) {            
             this.interestRates.pop({});
+        },    
+        addCard: function (event) {
+            alert(JSON.parse(JSON.stringify(app.$data)));             
         }    
 
     }
