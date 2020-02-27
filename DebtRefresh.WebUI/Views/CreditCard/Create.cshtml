@@ -8,17 +8,17 @@
     <!--Vue App Start-->
     <label>Credit Card Vendor Name:</label>
     <br />
-    <input v-model="cardVendor" placeholder="[Enter Credit Card Vendor Name]" size="50">
+    <input v-model="CardVendor" placeholder="[Enter Credit Card Vendor Name]" size="50">
     <br /><br />
 
     <label>Credit Card Nick Name:</label>
     <br />
-    <input v-model="cardNickname" placeholder="[Enter Credit Card Nickname]" size="50">
+    <input v-model="CardNickname" placeholder="[Enter Credit Card Nickname]" size="50">
     <br /><br />
 
     <label>Credit Card Type:</label>
     <br />
-    <select v-model="creditCardType">
+    <select v-model="CreditCardType">
         <option value="1">Visa</option>
         <option value="2">Mastercard</option>
         <option value="3">Discover</option>
@@ -30,12 +30,12 @@
 
     <label>Credit Card Credit Limit:</label>
     <br />
-    <input v-model="cardLimit" placeholder="[Enter Credit Card Limit]" size="50">
+    <input v-model="CardLimit" placeholder="[Enter Credit Card Limit]" size="50">
     <br /><br />
 
     <label>Credit Card Credit Balance:</label>
     <br />
-    <input v-model="cardBalance" placeholder="[Enter Credit Card Balance]" size="50">
+    <input v-model="CardBalance" placeholder="[Enter Credit Card Balance]" size="50">
     <br /><br />
 
     <label>Add Interest Rate(s):</label>
@@ -49,7 +49,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(item,index) in interestRates">
+            <tr v-for="(item,index) in InterestRates">
                 <td><input type="text" v-model="item.interestRate"></td>
                 <td><input type="text" v-model="item.startDate"></td>
                 <td><input type="text" v-model="item.endDate"></td>
@@ -67,11 +67,11 @@
 
     <br />
     <br />
-    <font color="gray">cardVendor-debug: {{ cardVendor }}</font><br />
-    <font color="gray">cardNickname-debug: {{ cardNickname }}</font><br />
-    <font color="gray">creditcardtype-debug: {{ creditCardType }}</font><br />
-    <font color="gray">cardLimit-debug: {{ cardLimit }}</font><br />
-    <font color="gray">cardBalance-debug: {{ cardBalance }}</font><br />
+    <font color="gray">CardVendor-debug: {{ CardVendor }}</font><br />
+    <font color="gray">CardNickname-debug: {{ CardNickname }}</font><br />
+    <font color="gray">Creditcardtype-debug: {{ CreditCardType }}</font><br />
+    <font color="gray">CardLimit-debug: {{ CardLimit }}</font><br />
+    <font color="gray">CardBalance-debug: {{ CardBalance }}</font><br />
     
     <!--Vue App End-->
 </div>

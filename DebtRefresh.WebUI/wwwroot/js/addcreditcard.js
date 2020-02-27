@@ -1,12 +1,12 @@
 ﻿var app = new Vue({
     el: '#app',
     data: {
-        cardVendor: '',
-        cardNickname: '',
-        creditCardType: '',
-        cardLimit: '',
-        cardBalance: '',
-        interestRates: [
+        CardVendor: '',
+        CardNickname: '',
+        CreditCardType: '',
+        CardLimit: '',
+        CardBalance: '',
+        InterestRates: [
             {
                 interestRate: '0.30',
                 startDate: '1/1/2020',
@@ -27,7 +27,19 @@
             this.interestRates.pop({});
         },    
         addCard: function (event) {
-            alert(JSON.parse(JSON.stringify(app.$data)));             
+            //alert(JSON.parse(JSON.stringify(app.$data)));
+            //Try this tonight: https://www.linkedin.com/pulse/post-data-from-vuejs-aspnet-core-using-axios-adeyinka-oluwaseun
+
+
+            axios
+                .post('/CreditCard/Create', {
+                    data: this.CardVendor                    
+                }).then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
         }    
 
     }

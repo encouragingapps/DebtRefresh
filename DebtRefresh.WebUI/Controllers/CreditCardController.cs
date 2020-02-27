@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DebtRefresh.WebUI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DebtRefresh.WebUI.Controllers
 {
-    public class CreditCardController : Controller
+    public class CreditCardController : Controller 
     {
         // GET: CreditCard
         public ActionResult Index()
@@ -28,13 +29,14 @@ namespace DebtRefresh.WebUI.Controllers
         }
 
         // POST: CreditCard/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        [HttpPost]        
+        public ActionResult Create([FromBody]CreditCardModel data)
         {
             try
             {
-                // TODO: Add insert logic here
+                                
+                // THESE CODE ALWAYS RETURNS NULL DATA No matter what I try
+                // Even passing in and individual field gives me null
 
                 return RedirectToAction(nameof(Index));
             }
