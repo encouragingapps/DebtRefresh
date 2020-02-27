@@ -29,17 +29,21 @@
         addCard: function (event) {
             //alert(JSON.parse(JSON.stringify(app.$data)));
             //Try this tonight: https://www.linkedin.com/pulse/post-data-from-vuejs-aspnet-core-using-axios-adeyinka-oluwaseun
-
-
-            axios
-                .post('/CreditCard/Create', {
-                    data: this.CardVendor                    
-                }).then(function (response) {
+            axios({
+                method: 'post',
+                url: '/CreditCard/Create',
+                data: {
+                    "CardVendor": this.CardVendor,
+                    "CardNickname": this.CardNickname
+                }
+            })
+                .then(function (response) {
                     console.log(response);
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
+           
         }    
 
     }
