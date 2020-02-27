@@ -3,7 +3,7 @@
     data: {
         CardVendor: '',
         CardNickname: '',
-        CreditCardType: '',
+        CardType: '',
         CardLimit: '',
         CardBalance: '',
         InterestRates: [
@@ -34,7 +34,10 @@
                 url: '/CreditCard/Create',
                 data: {
                     "CardVendor": this.CardVendor,
-                    "CardNickname": this.CardNickname
+                    "CardNickname": this.CardNickname,
+                    "CardType": this.CardType,
+                    "CardLimit": this.CardLimit,
+                    "CardBalance": this.CardBalance
                 }
             })
                 .then(function (response) {

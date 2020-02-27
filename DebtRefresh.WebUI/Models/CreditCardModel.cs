@@ -6,8 +6,8 @@ namespace DebtRefresh.WebUI.Models
     {        
         public string CardVendor { get; set; }        
         public string CardNickname { get; set; }
-        //public string CreditCardType { get; set; }
-        //public string CardLimit { get; set; }
-        //public string CardBalance { get; set; }
+        public string CardType { get; set; }
+        public string CardLimit { get; set; }
+        public string CardBalance { get; set; }
     }
 }
