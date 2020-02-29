@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using DebtRefresh.WebUI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+
 
 namespace DebtRefresh.WebUI.Controllers
 {
@@ -30,18 +32,17 @@ namespace DebtRefresh.WebUI.Controllers
 
         // POST: CreditCard/Create
         [HttpPost]        
-        public ActionResult Create([FromBody]CreditCardModel data)
+        public ActionResult Create([FromBody]JSONModel data)
         {
             try
-            {
-                                
-                // THESE CODE ALWAYS RETURNS NULL DATA No matter what I try
-                // Even passing in and individual field gives me null
-
+            { 
+                CreditCardModel c = JsonConvert.DeserializeObject<CreditCardModel>(data.Json);
+                
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception e)
             {
+                string err = e.ToString();
                 return View();
             }
         }

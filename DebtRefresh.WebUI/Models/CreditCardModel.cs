@@ -1,13 +1,21 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using DebtRefresh.WebUI.Interfaces;
 
 namespace DebtRefresh.WebUI.Models
 {
     public class CreditCardModel
-    {        
-        public string CardVendor { get; set; }        
+    {
+        CreditCardModel ()
+        {
+            InterestRates = new List<InterestRateModel>();
+        }
+
+        public string CardVendor { get; set; }
         public string CardNickname { get; set; }
         public string CardType { get; set; }
         public string CardLimit { get; set; }
         public string CardBalance { get; set; }
+        public List<InterestRateModel> InterestRates { get; set; }
     }
 }

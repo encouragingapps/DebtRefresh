@@ -50,9 +50,9 @@
         </thead>
         <tbody>
             <tr v-for="(item,index) in InterestRates">
-                <td><input type="text" v-model="item.interestRate"></td>
-                <td><input type="text" v-model="item.startDate"></td>
-                <td><input type="text" v-model="item.endDate"></td>
+                <td><input type="text" v-model="item.InterestRate"></td>
+                <td><input type="text" v-model="item.StartDate"></td>
+                <td><input type="text" v-model="item.EndDate"></td>
                 <td><button type="button" v-on:click="removeInterestRate(item)">Remove</button>
             </tr>
         </tbody>

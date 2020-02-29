@@ -8,23 +8,23 @@
         CardBalance: '',
         InterestRates: [
             {
-                interestRate: '0.30',
-                startDate: '1/1/2020',
-                endDate: '6/30/2020'
+                InterestRate: 0.30,
+                StartDate: '1/1/2020',
+                EndDate: '6/30/2020'
             },
             {
-                interestRate: '0.60',
-                startDate: '7/1/2020',
-                endDate: '12/31/2020'
+                InterestRate: 0.60,
+                StartDate: '7/1/2020',
+                EndDate: '12/31/2020'
             }
         ]
     },
     methods: {
         addInterestRate: function (event) {                   
-            this.interestRates.push({});
+            this.InterestRates.push({});
         },
         removeInterestRate: function (event) {            
-            this.interestRates.pop({});
+            this.InterestRates.pop({});
         },    
         addCard: function (event) {
             //alert(JSON.parse(JSON.stringify(app.$data)));
@@ -33,12 +33,9 @@
                 method: 'post',
                 url: '/CreditCard/Create',
                 data: {
-                    "CardVendor": this.CardVendor,
-                    "CardNickname": this.CardNickname,
-                    "CardType": this.CardType,
-                    "CardLimit": this.CardLimit,
-                    "CardBalance": this.CardBalance
-                }
+                    "Json": JSON.stringify(app.$data)                   
+                },
+                header: {'Content-Type': 'application/json'}
             })
                 .then(function (response) {
                     console.log(response);
