@@ -6,17 +6,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DebtRefresh.Domain.Data
+namespace DebtRefresh.Domain.Data.DbService
 {
-    public class CreditCardDbService
+    public static class CreditCardDbService
     {
 
-        public static void Add(CreditCardTableData creditCard)
+        public static int Add(CreditCardTableData creditCard)
         {
             using var context = new SqliteContext();
             var entity = context.CreditCards.Add(creditCard);
-            entity.State = EntityState.Added;
+            entity.State = EntityState.Added;            
             context.SaveChanges();
+            return creditCard.CreditCardId;
         }
 
         public static void Edit(CreditCardTableData creditCard)

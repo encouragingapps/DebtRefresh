@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DebtRefresh.Domain.Data
+namespace DebtRefresh.Domain.Data.DbService
 {
-    public class InterestRateDbService
+    public static class InterestRateDbService
     {
 
         public static void Add(InterestRateTableData interestRate)
