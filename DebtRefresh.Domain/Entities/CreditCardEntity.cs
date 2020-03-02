@@ -14,6 +14,7 @@ namespace DebtRefresh.Domain.Entities
            
         }
 
+       
         public string VendorName { get; set; }
         public CreditCardTypeEnum CreditCardType { get; set; }
         public string AccountNickName { get; set; }
