@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DebtRefresh.Domain.BusinessLogic;
+using DebtRefresh.Domain.Models;
 using DebtRefresh.WebUI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -37,7 +39,10 @@ namespace DebtRefresh.WebUI.Controllers
             try
             { 
                 CreditCardModel c = JsonConvert.DeserializeObject<CreditCardModel>(data.Json);
-                
+
+                var businessData = new CreditCardDebtBL();
+                businessData.SaveData(c);                
+
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception e)

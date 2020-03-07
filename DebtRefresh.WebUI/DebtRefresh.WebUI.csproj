@@ -11,6 +11,10 @@
     <PackageReference Include="vue" Version="2.6.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DebtRefresh.Domain\DebtRefresh.Domain.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

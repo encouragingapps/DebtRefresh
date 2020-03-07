@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DebtRefresh.WebUI.Interfaces;
 
-namespace DebtRefresh.WebUI.Models
+namespace DebtRefresh.Domain.Models
 {
     public class InterestRateModel
     {

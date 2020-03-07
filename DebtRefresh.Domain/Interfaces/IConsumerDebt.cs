@@ -12,8 +12,8 @@ namespace DebtRefresh.Domain.Interfaces
         public float CreditLine { get; set; }
         public float OwingBalance { get; set; }
         public IInterestSchedule InterestRates { get; set; }
-        public IFeeSchedule FeeSchedule { get; set; }
-        public IDueDateSchedule DueDateSchedule { get; set; }
-        public ConsumerDebtEnums ConsumerDebtType { get; set; }
+        //public IFeeSchedule FeeSchedule { get; set; }
+        //public IDueDateSchedule DueDateSchedule { get; set; }
+        //public ConsumerDebtEnums ConsumerDebtType { get; set; }
     }
 }
